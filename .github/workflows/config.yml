@@ -1,0 +1,12 @@
+name: CI/CD counter app
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: poc1
+    
+    steps:
+    - uses: actions/checkout@v2
